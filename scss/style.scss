@@ -1,0 +1,38 @@
+/*primero se llama a las vaiables, mixins y todo lo que corrresponda  a utilities   */
+
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+
+
+
+
+
+
+
+
+
+
+
+/*ahora llamamamos todo lo que este en base*/
+
+@import "./base/reset";
+
+
+
+/* ahora se llama a layout, todo lo que hay en esa carpeta*/
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/index";
+@import "./layout/catalogo";
+@import "./layout/contactanos";
+@import "./layout/negocio";
+@import "./layout/productos";
+@import "./layout/footer";
+@import "./layout/_media.scss/media-425";
+@import "./layout/_media.scss/media-768";
+
+
+
+@import "./components/botones";
+

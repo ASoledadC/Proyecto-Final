@@ -1,0 +1,25 @@
+/*seccion navegacion*/
+
+    .seccion-navegacion{
+        background-color: rgb(218, 156, 39);
+        height: 9.375rem;
+        margin: 0%;
+        padding-top: 1.25rem;
+        ul{
+            .nav-button{
+                .boton-verde{
+                    background-color: $background;
+                    @include flex (row, none, none, none);
+                    padding: .625rem;
+                    border-style: double;
+                    border-color: rgb(52, 54, 54);
+                    border-radius: .9375rem;
+                    margin-top: 1.5625rem;
+                }
+                }
+            }
+
+           
+            }
+        
+    
