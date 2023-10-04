@@ -14,7 +14,8 @@ ul {
 }
 
 /* ahora se llama a layout, todo lo que hay en esa carpeta*/
-header {
+.color-header {
+  background-color: rgb 5, 215, 5;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -24,10 +25,13 @@ header {
   width: 100%;
   height: 12.5rem;
 }
-header .color-header {
-  background: rgb 5, 215, 5;
+.color-header .titulo-fonts img {
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
 }
-header .color-header div .titulo-fonts p {
+.color-header .titulo-fonts img p {
   text-align: left;
   font-style: italic;
   color: black;
@@ -36,13 +40,7 @@ header .color-header div .titulo-fonts p {
   font-weight: 100;
   margin-left: 1.25rem;
 }
-header .color-header img {
-  width: 6.25rem;
-  height: 6.25rem;
-  margin-top: 1.25rem;
-  margin-left: 1.25rem;
-}
-header nav .nav-bar {
+.color-header .nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -55,11 +53,11 @@ header nav .nav-bar {
   margin: 20px;
   flex-wrap: wrap;
 }
-header nav .nav-bar:hover {
+.color-header .nav-bar:hover {
   color: bisque;
   box-shadow: 3px 2px 15px;
 }
-header nav ul li a {
+.color-header .nav-bar:hover li a {
   display: flex;
   text-decoration: none;
   text-transform: capitalize;
@@ -75,13 +73,14 @@ header nav ul li a {
   margin: 0%;
   padding-top: 1.25rem;
 }
-.seccion-navegacion ul .nav-button .boton-verde {
+.seccion-navegacion .nav-button {
+  list-style: none;
+  text-decoration: none;
+}
+.seccion-navegacion .boton-verde {
   background-color: rgb 5, 215, 5;
   display: flex;
   flex-direction: row;
-  justify-content: none;
-  align-items: none;
-  gap: none;
   padding: 0.625rem;
   border-style: double;
   border-color: rgb(52, 54, 54);
@@ -90,7 +89,7 @@ header nav ul li a {
 }
 
 /*index*/
-.index.seccion-principal div .container-index-grid1 {
+.index-seccion-principal .container-index-grid1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -98,20 +97,20 @@ header nav ul li a {
   width: 100%;
   height: 100vh;
 }
-.index.seccion-principal div img {
+.index-seccion-principal .container-index-grid1 img {
   width: 37.5rem;
   height: 37.5rem;
   margin-top: 2.5rem;
   margin-left: 1.875rem;
 }
-.index.seccion-principal div h1 {
+.index-seccion-principal .container-index-grid1 .div-seccion-index h1 {
   padding: 2.5rem;
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
   font-size: 2.5rem;
   margin: 2.5rem;
 }
-.index.seccion-principal div p {
+.index-seccion-principal .container-index-grid1 .div-seccion-index p {
   font-family: "Libre Franklin", sans-serif;
   font-size: 1.5625rem;
   word-spacing: 1.25rem;
@@ -120,7 +119,7 @@ header nav ul li a {
   padding: 2.5rem;
   margin: 2.5rem;
 }
-.index.seccion-principal .container-grid2 {
+.index-seccion-principal .container-grid2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -128,13 +127,130 @@ header nav ul li a {
   width: 100%;
   height: 100vh;
 }
-.index.seccion-principal .container-grid2 img {
+.index-seccion-principal .container-grid2 img {
   width: 80%;
   object-fit: cover;
   margin-top: 1.875rem;
   margin-left: auto;
   margin-right: auto;
   margin-block-end: 10%;
+}
+
+/*catalogo*/
+.seccion-catalogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  width: 100%;
+  height: auto;
+  margin: 1.875rem;
+}
+.seccion-catalogo h2 {
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.875rem;
+}
+.seccion-catalogo .catalogo-class {
+  border-radius: 0.3125rem;
+  border-color: black;
+  background-color: orange;
+  justify-content: center;
+}
+.seccion-catalogo .catalogo-a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 1.25rem;
+}
+
+/*contactanos. html*/
+.seccion-contactos {
+  width: 100%;
+  height: 100vh;
+  padding-top: 2.5rem;
+}
+.seccion-contactos .contactanos h2 {
+  background-color: rgb(178, 231, 178);
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2.5rem;
+  padding: 3.125rem;
+  width: 100%;
+}
+.seccion-contactos .contactanos p {
+  width: 100%;
+  background-color: rgb(218, 216, 214);
+  text-align: center;
+  font-size: 1.875rem;
+  padding: 1.875rem;
+  padding-top: 2.5rem;
+  margin-top: 1.25rem;
+}
+.seccion-contactos .datos-contacto {
+  background-color: white;
+}
+.seccion-contactos .datos-contacto p {
+  font-size: 1.875rem;
+  padding: 2.1875rem;
+  text-align: center;
+}
+
+/*negocio.html*/
+.seccion-negocio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  width: 100%;
+  height: 100vh;
+}
+.seccion-negocio h2 {
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2.5rem;
+  margin-top: 7.5rem;
+}
+.seccion-negocio h2 p {
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.5625rem;
+  word-spacing: 1.25rem;
+  line-height: 3.125rem;
+  padding: 2.5rem;
+  margin: 2.5rem;
+}
+.seccion-negocio .boton-negocio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+}
+.seccion-negocio .boton-negocio .contactar-naranja {
+  background-color: rgba(238, 189, 97, 0.637);
+  border-color: rgb(52, 54, 54);
+  border-radius: 0.3125rem;
+  height: 5%;
+  width: 20%;
+  border: solid 0.125rem;
+}
+.seccion-negocio .boton-negocio .contactar-naranja:active {
+  text-shadow: 2px 2px 15px;
+  color: bisque;
+}
+.seccion-negocio .boton-negocio .contactar-naranja:active .class-contactanos {
+  text-decoration: none;
+  text-transform: capitalize;
+  list-style: none;
+  font-size: 1.875rem;
+  padding: 3.125rem;
+  align-items: center;
+  color: black;
 }
 
 /*seccion footer*/
@@ -144,25 +260,25 @@ header nav ul li a {
   justify-content: space-between;
   align-items: none;
   gap: none;
-  background-color: rgb 5, 215, 5;
+  background-color: rgb(133, 199, 133);
   position: relative;
   width: 100%;
   height: 9.375rem;
   padding-bottom: 1.25rem;
 }
-.conteiner-pie-pagina div .datos {
+.conteiner-pie-pagina .datos {
   text-align: left;
   padding: 1.25rem;
 }
-.conteiner-pie-pagina div .redes {
+.conteiner-pie-pagina .redes {
   text-align: right;
   padding-right: 1.25rem;
   padding-top: 1.25rem;
 }
 
 /*aca van todos los componentes, de cards, botones, etc*/
-/*header*/
-nav div .class-buscar {
+/*boton del header*/
+.class-buscar {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -171,23 +287,19 @@ nav div .class-buscar {
   color: rgba(168, 182, 170, 0.585);
   padding: 0.3125rem;
 }
-
-nav div .class-buscar:active {
+.class-buscar:active {
   background-color: bisque;
   border: none;
   box-shadow: 5px 3px 15 px;
 }
-
-nav div .input-buscar {
-  background-color: rgba(168, 182, 170, 0.585);
-  font-size: 1.25rem;
+.class-buscar .input-buscar {
+  background-color: rgb(218, 216, 214);
   padding: 0.3125rem;
   border-style: ridge;
   border-color: rgb(52, 54, 54);
   border-width: 0.1875rem;
 }
-
-nav div .boton-buscar img {
+.class-buscar .boton-buscar img {
   background-color: rgb(218, 216, 214);
   width: 1.25rem;
   height: 1.25rem;

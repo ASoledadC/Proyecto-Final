@@ -1,29 +1,23 @@
 /*aca van todos los componentes, de cards, botones, etc*/
 
-/*header*/
-nav div .class-buscar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: none;
+/*boton del header*/
+ .class-buscar {
+  @include flex (row, center, center, none);
     color: rgba(168, 182, 170, 0.585);
     padding: 0.3125rem;
-  }
-  nav div .class-buscar:active {
+        &:active {
     background-color: bisque;
     border: none;
     box-shadow: 5px 3px 15 px;
   }
-  nav div .input-buscar {
-    background-color: rgba(168, 182, 170, 0.585);
-    font-size: 1.25rem;
-    padding: 0.3125rem;
-    border-style: ridge;
-    border-color: rgb(52, 54, 54);
-    border-width: 0.1875rem;
+  .input-buscar {
+       background-color: rgb(218, 216, 214); 
+       padding: 0.3125rem;
+       border-style: ridge;
+       border-color: rgb(52, 54, 54);
+       border-width: 0.1875rem;
   }
-  nav div .boton-buscar img {
+  .boton-buscar img {
     background-color: rgb(218, 216, 214);
     width: 1.25rem;
     height: 1.25rem;
@@ -33,3 +27,4 @@ nav div .class-buscar {
     border-width: 0.1875rem;
     object-fit: cover;
   }
+}
