@@ -1,30 +1,120 @@
 /*aca van todos los componentes, de cards, botones, etc*/
 
 /*boton del header*/
- .class-buscar {
+ .class-buscar{
   @include flex (row, center, center, none);
     color: rgba(168, 182, 170, 0.585);
-    padding: 0.3125rem;
-        &:active {
-    background-color: bisque;
-    border: none;
-    box-shadow: 5px 3px 15 px;
+    
+        
   }
   .input-buscar {
        background-color: rgb(218, 216, 214); 
-       padding: 0.3125rem;
+       padding: .1875rem;
        border-style: ridge;
        border-color: rgb(52, 54, 54);
        border-width: 0.1875rem;
-  }
-  .boton-buscar img {
-    background-color: rgb(218, 216, 214);
-    width: 1.25rem;
-    height: 1.25rem;
-    padding: 1.25rem;
-    border-style: ridge;
-    border-color: rgb(52, 54, 54);
-    border-width: 0.1875rem;
-    object-fit: cover;
+       &:active {
+        background-color: bisque;
+        border: none;
+        box-shadow: 5px 3px 15 px;
   }
 }
+  /*seccion ingreso*/
+  .seccion-ingreso {
+    background-image: url(../assets/img/estilonatural.jpeg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50%;
+    @include flex (column, center, center, .3125rem);
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 2.5rem;
+          
+          .ingresa-aqui {
+                  h1{
+                    font-size: 2.5rem;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    text-transform: capitalize;
+                    
+                  }          
+      }
+    
+           .ingresar-class {
+            font-size: 1.25rem;
+            border-radius: 0.3125rem;
+            text-align: center;
+            height: 50%;
+            width: 70%;
+            font-size: 1.5625rem;
+            padding: 60px;
+                   input::placeholder {
+                    color: black;
+
+                   } 
+                        #enviar{
+            background-color: rgba(0, 128, 0, 0.411);
+            height: 30px;
+            width: 60px;
+            font-size: 1.25rem;
+            border-radius: .3125rem;
+            text-align: center;
+}                  
+}
+  }  
+  /*formulario de contacto*/
+  .container-registro {
+      
+    background-image: url(../assets/img/estilonatural.jpeg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50%;
+       width: 100%;
+       height: 100vh;
+       overflow: hidden;
+       @include flex (column, center, center, .3125rem);
+       
+      .formulario-registro{
+        @include flex (column, center, center, .3125rem);
+                     h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-transform: capitalize;
+                     }
+        
+              input{
+          
+          width: 100%;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          text-transform: capitalize;
+          border-radius: .3125rem;
+          font-size: 1.25rem;
+          background-color: transparent;
+          text-align: center;
+          &::placeholder {
+            color: black;
+          } 
+        }
+
+               textarea {
+              width: 70%;
+              border-radius: .3125rem;
+              font-size: 20px;
+              background-color: transparent;
+
+}
+                #enviar {
+                   background-color: rgba(0, 128, 0, 0.411);
+                   height: 5%;
+                   width: 20%;
+                   font-size: 1.25rem;
+                   border-radius: .3125rem;
+                   text-align: center;
+}
+
+                  
+  } 
+}
+  
+  

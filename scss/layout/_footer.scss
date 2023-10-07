@@ -1,6 +1,6 @@
 /*seccion footer*/
 
-.conteiner-pie-pagina{
+.container-pie-pagina{
     @include flex (row, space-between, none, none);
     background-color: rgb(133, 199, 133);
     position: relative;

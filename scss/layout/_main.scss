@@ -2,27 +2,40 @@
 
     .seccion-navegacion{
         background-color: rgb(218, 156, 39);
+        @include flex (row,space-around, center, none);
         height: 9.375rem;
         margin: 0%;
         padding-top: 1.25rem;
-            .nav-button{
-                list-style: none;
-                    text-decoration: none;
-                }
-                .boton-verde{
+        flex-wrap: wrap;
+            .nav-href{  
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                     margin: 20px;
+                     gap: 60px;
+                     flex-wrap: wrap;
+                     
+                       li{
+                           a{
+                    border: 1px solid black;
+                    padding: 10px 15px;
                     background-color: $background;
-                  display: flex ;
-                  flex-direction: row;
-                    padding: .625rem;
-                    border-style: double;
-                    border-color: rgb(52, 54, 54);
-                    border-radius: .9375rem;
-                    margin-top: 1.5625rem;
-                    
+                    text-decoration: none;
+                    list-style: none;
+                    text-transform: capitalize;
+                    font-size: 1.25rem;
+                    color: black;
+                    font-family: Arial, Helvetica, sans-serif;
+                       &:hover {
+                        color: bisque;
+                        box-shadow: 3px 2px 15px; 
                 }
             }
+          
 
-           
+            }  
+                   
+                    }
+                }
             
-        
     

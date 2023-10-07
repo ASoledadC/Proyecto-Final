@@ -515,59 +515,7 @@ height: .625rem;
 
 
 @media(max-width: 768px) {
-  header{ 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .nav-bar{
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .titulo-fonts p {
-    color: white;
-    font-size: .9375rem; 
-  }
-  .nav-bar li a{
-    color: white;    
-  }
-  .class-buscar {
-    display: none;
-
-    
-        
   
-   } 
-   .container-index-grid1{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 500px;
-   }
-   
-.index-seccion-principal img {
-    width: 25rem;
-    height: 25rem; 
-}
-
-.index-seccion-principal h1 {
-    
-    font-size: 1.25rem;
-}
-.div-seccion-index p {
-    font-size: 1.25rem;
-    word-spacing: .625rem;
-    line-height: 1.5625rem;
-    
-    padding: .9375rem;
-    margin: 1.25rem;
-}
-   .container-index-grid2{
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-   }
-}
-
-
 
    @media (max-width: 425px) {
     header{
