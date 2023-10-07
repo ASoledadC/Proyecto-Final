@@ -304,16 +304,11 @@ ul {
 }
 
 /* productos*/
-.container-fluid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: none;
-  width: 100%;
-  height: 100vh;
+.mi-carousel {
+  width: 40%;
 }
-.container-fluid .seccion-productos h2 {
+
+.seccion-productos h2 {
   padding: 2.5rem;
   justify-content: center;
   font-size: 1.875rem;
@@ -321,15 +316,16 @@ ul {
   font-family: "Libre Franklin", sans-serif;
   text-decoration: underline;
 }
-.container-fluid .seccion-productos p {
+
+.seccion-productos p {
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
 }
-.container-fluid .carousel-item img {
+
+.carousel-item img {
   width: 31.25rem;
   height: 31.25rem;
   justify-content: center;
-  text-align: center;
   overflow: hidden;
 }
 
@@ -356,52 +352,52 @@ ul {
   padding-top: 1.25rem;
 }
 
+/*media 425*/
 /*media querys 768 */
-.color-header {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+@media (max-width: 768px) {
+  .color-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .color-header .titulo-fonts p {
+    color: white;
+    font-size: 0.9375rem;
+  }
+  .nav-bar {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .nav-bar li a {
+    color: white;
+  }
+  .nav-bar .class-buscar {
+    display: none;
+  }
+  .index-seccion-principal .container-index-grid1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 500px;
+  }
+  .index-seccion-principal img {
+    width: 50%;
+    height: 100vh;
+  }
+  .index-seccion-principal div h1 {
+    font-size: 1.25rem;
+  }
+  .index-seccion-principal p {
+    font-size: 0.9375rem;
+    word-spacing: 0.625rem;
+    line-height: 1.5625rem;
+    padding: 0.9375rem;
+    margin: 1.25rem;
+  }
+  .index-seccion-principal .container-index-grid2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
-.color-header .titulo-fonts p {
-  color: white;
-  font-size: 0.9375rem;
-}
-
-.nav-bar {
-  flex-direction: column;
-  justify-content: space-around;
-}
-.nav-bar li a {
-  color: white;
-}
-.nav-bar .class-buscar {
-  display: none;
-}
-
-.index-seccion-principal .container-index-grid1 {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  height: 500px;
-}
-.index-seccion-principal img {
-  width: 50%;
-  height: 100vh;
-}
-.index-seccion-principal div h1 {
-  font-size: 1.25rem;
-}
-.index-seccion-principal p {
-  font-size: 0.9375rem;
-  word-spacing: 0.625rem;
-  line-height: 1.5625rem;
-  padding: 0.9375rem;
-  margin: 1.25rem;
-}
-.index-seccion-principal .container-index-grid2 {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
 /*aca van todos los componentes, de cards, botones, etc*/
 /*boton del header*/
 .class-buscar {
