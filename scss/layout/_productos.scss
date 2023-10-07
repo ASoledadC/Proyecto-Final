@@ -1,9 +1,5 @@
 /* productos*/
 
-.container-fluid{
-    @include flex (column, center, center, none);
-    width: 100%;
-    height: 100vh;
         .seccion-productos h2{
         padding: 2.5rem;
         justify-content: center;
@@ -22,9 +18,7 @@
    width: 31.25rem;
     height: 31.25rem;
     justify-content: center;
-    text-align: center;
     overflow: hidden;
        }   
 
     }
-}
