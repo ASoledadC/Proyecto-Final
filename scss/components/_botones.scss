@@ -19,102 +19,98 @@
         box-shadow: 5px 3px 15 px;
   }
 }
-  /*seccion ingreso*/
-  .seccion-ingreso {
-    background-image: url(../assets/img/estilonatural.jpeg);
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: 50%;
-    @include flex (column, center, center, .3125rem);
-    height: 100vh;
-    width: 100%;
-    flex-wrap: wrap;
-    padding: 2.5rem;
-          
-          .ingresa-aqui {
-                  h1{
-                    font-size: 2.5rem;
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    text-transform: capitalize;
-                    
-                  }          
-      }
-    
-           .ingresar-class {
-            font-size: 1.25rem;
-            border-radius: 0.3125rem;
-            text-align: center;
-            height: 50%;
-            width: 70%;
-            font-size: 1.5625rem;
-            padding: 60px;
-                   input::placeholder {
-                    color: black;
-
-                   } 
-                        #enviar{
-            background-color: rgba(0, 128, 0, 0.411);
-            height: 30px;
-            width: 60px;
-            font-size: 1.25rem;
-            border-radius: .3125rem;
-            text-align: center;
-}                  
-}
-  }  
   /*formulario de contacto*/
-  .container-registro {
-      
-    background-image: url(../assets/img/estilonatural.jpeg);
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: 50%;
-       width: 100%;
-       height: 100vh;
-       overflow: hidden;
-       @include flex (column, center, center, .3125rem);
-       
-      .formulario-registro{
-        @include flex (column, center, center, .3125rem);
-                     h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-transform: capitalize;
-                     }
-        
-              input{
-          
-          width: 100%;
+.container-registro form{
+  background-image: url(../assets/img/estilonatural.jpeg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50%;
+  @include flex (column, center, center, .3125rem);
+  height: 100vh;
+  width: 100%;
+     overflow: hidden;
+     align-items: center;
+     
+                   h2 {
+          text-align: center;  
+          font-size: 2.5rem;
           font-family: Verdana, Geneva, Tahoma, sans-serif;
           text-transform: capitalize;
-          border-radius: .3125rem;
-          font-size: 1.25rem;
-          background-color: transparent;
-          text-align: center;
-          &::placeholder {
-            color: black;
-          } 
-        }
-
-               textarea {
+                   }
+      
+            input{
               width: 70%;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              text-transform: capitalize;
               border-radius: .3125rem;
-              font-size: 20px;
+              font-size: 1.25rem;
               background-color: transparent;
+              text-align: justify;
+          }
+          
+            }
+
+            
+
+      
+             textarea {
+            width: 70%;
+            border-radius: .3125rem;
+            font-size: 20px;
+            background-color: transparent;
 
 }
-                #enviar {
-                   background-color: rgba(0, 128, 0, 0.411);
-                   height: 5%;
-                   width: 20%;
-                   font-size: 1.25rem;
-                   border-radius: .3125rem;
-                   text-align: center;
-}
+              #enviar {
+                 background-color: rgba(0, 128, 0, 0.411);
+                 height: 5%;
+                 width: 20%;
+                 font-size: 1.25rem;
+                 border-radius: .3125rem;
+                 text-align: center;
+              }
 
-                  
-  } 
+
+                
+   
+
+  
+  
+
+  
+  /*seccion ingreso*/
+.seccion-ingreso {
+  @extend .container-registro;
+  background-color: white;
+  
+             .ingresa-aqui {
+                     h1{
+                      font-size: 2.5rem;
+                      font-family: Verdana, Geneva, Tahoma, sans-serif;
+                      text-transform: capitalize
+                       
+                     }          
+         }
+       
+              .ingresar-class {
+               font-size: 1.25rem;
+               border-radius: 0.3125rem;
+               text-align: center;
+               height: 800px;
+               width: 100%;
+               font-size: 1.5625rem;
+               padding: 60px;
+                      input::placeholder {
+                       color: black;
+   
+                      } 
+                           #enviar{
+               background-color: rgba(0, 128, 0, 0.411);
+               height: 2.5rem;
+               width: 5rem;
+               font-size: 1.25rem;
+               border-radius: .3125rem;
+               text-align: center;
+                           }
+   }                  
+   
 }
-  
-  

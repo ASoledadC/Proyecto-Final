@@ -7,8 +7,8 @@
                h2{
         text-align: center;
         font-family: 'Libre Franklin', sans-serif;
-        font-size: 2.5rem;
-        margin-top: 1.25rem;
+        font-size: 1.875rem;
+               }
                     p{
             text-align: center;
             font-family: 'Libre Franklin', sans-serif;
@@ -21,33 +21,33 @@
    }
     }      
       .boton-negocio{
-      
+        display: flex;
+        justify-content: center;
               .contactar-naranja{
                 
-                background-color: rgba(238, 189, 97, 0.637);
+                background-color: orange;
                 border-color: rgb(52, 54, 54);
                 border-radius: .3125rem;
-                height: 5%;
-                width: 20%;
+                height: 50px;
+                width: 10%;
                 border: solid .125rem;
+                
                     & :active{
                     text-shadow: 2px 2px 15px;
                     color: bisque;
-                           .class-contactanos{
+                    
+              .class-contactanos {
                             text-decoration: none;
-                            text-transform: capitalize;
-                            list-style: none;
-                            font-size: 1.25rem;
-                            padding: 3.125rem;
-                            align-items: center;
-                            color: black;  
-                            justify-content: center;
-                            align-items: center;
-    
+                    text-transform: capitalize;
+                    list-style: none;
+                    font-size: 1.25rem;
+                    padding: 3.125rem;
+                    align-items: center;
+                    color: black;  
+                            
                           }
 }
 
 }
 
-}
 }

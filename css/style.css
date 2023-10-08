@@ -267,10 +267,9 @@ ul {
 .seccion-negocio div h2 {
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
-  font-size: 2.5rem;
-  margin-top: 1.25rem;
+  font-size: 1.875rem;
 }
-.seccion-negocio div h2 p {
+.seccion-negocio div p {
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
   font-size: 1.5625rem;
@@ -279,19 +278,24 @@ ul {
   padding: 2.5rem;
   margin: 2.5rem;
 }
-.seccion-negocio .boton-negocio .contactar-naranja {
-  background-color: rgba(238, 189, 97, 0.637);
+
+.boton-negocio {
+  display: flex;
+  justify-content: center;
+}
+.boton-negocio .contactar-naranja {
+  background-color: orange;
   border-color: rgb(52, 54, 54);
   border-radius: 0.3125rem;
-  height: 5%;
-  width: 20%;
+  height: 50px;
+  width: 10%;
   border: solid 0.125rem;
 }
-.seccion-negocio .boton-negocio .contactar-naranja :active {
+.boton-negocio .contactar-naranja :active {
   text-shadow: 2px 2px 15px;
   color: bisque;
 }
-.seccion-negocio .boton-negocio .contactar-naranja :active .class-contactanos {
+.boton-negocio .contactar-naranja :active .class-contactanos {
   text-decoration: none;
   text-transform: capitalize;
   list-style: none;
@@ -299,8 +303,6 @@ ul {
   padding: 3.125rem;
   align-items: center;
   color: black;
-  justify-content: center;
-  align-items: center;
 }
 
 /* productos*/
@@ -353,6 +355,81 @@ ul {
 }
 
 /*media 425*/
+@media (max-width: 425px) {
+  .color-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .color-header .titulo-fonts .img {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+  .color-header .titulo-fonts p {
+    color: white;
+    font-size: 0.9375rem;
+  }
+  .color-header nav .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .color-header nav div .class-buscar {
+    display: none;
+  }
+  .seccion-navegacion {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .seccion-navegacion .nav-href {
+    background-color: rgba(128, 128, 128, 0.319);
+    height: 75px;
+    margin: 0%;
+    padding-top: 1.25rem;
+    justify-content: center;
+  }
+  .seccion-navegacion .nav-href li a {
+    color: white;
+  }
+  .index-seccion-principal .container-index-grid1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .index-seccion-principal .container-index-grid1 img {
+    width: 50%;
+    height: 50%;
+    margin-left: 1.875rem;
+  }
+  .index-seccion-principal .container-index-grid1 .div-seccion-index h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin: 1.25rem;
+    padding: 0.625rem;
+  }
+  .index-seccion-principal .container-index-grid1 .div-seccion-index p {
+    text-align: center;
+    justify-content: center;
+    font-size: 0.625rem;
+    word-spacing: 0.625rem;
+    line-height: 1.5625rem;
+    margin: 0.625rem;
+    padding-bottom: 1.25rem;
+  }
+  .index-seccion-principal .container-index-grid1 .container-index-grid2 {
+    width: 25rem;
+    height: 25rem;
+    margin-bottom: 2.5rem;
+    margin-top: 0%;
+    padding-block: 0px;
+    /*.grid-productos{
+
+    flex-direction: column;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(4) 1fr;
+    }*/
+  }
+}
 /*media querys 768 */
 @media (max-width: 768px) {
   .color-header {
@@ -364,36 +441,46 @@ ul {
     color: white;
     font-size: 0.9375rem;
   }
-  .nav-bar {
+  .color-header .nav-bar {
     flex-direction: column;
     justify-content: space-around;
   }
-  .nav-bar li a {
+  .color-header .nav-bar li a {
     color: white;
   }
-  .nav-bar .class-buscar {
+  .color-header .nav-bar li a div .class-buscar {
     display: none;
   }
-  .index-seccion-principal .container-index-grid1 {
+  .color-header .nav-bar .seccion-navegacion {
+    background-color: rgba(128, 128, 128, 0.319);
+    height: 75px;
+    margin: 0%;
+    padding-top: 1.25rem;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .color-header .nav-bar .seccion-navegacion .nav-href li a {
+    color: white;
+  }
+  .color-header .nav-bar .index-seccion-principal .container-index-grid1 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    height: 500px;
   }
-  .index-seccion-principal img {
+  .color-header .nav-bar .index-seccion-principal img {
     width: 50%;
     height: 100vh;
   }
-  .index-seccion-principal div h1 {
+  .color-header .nav-bar .index-seccion-principal .div-seccion-index h1 {
     font-size: 1.25rem;
   }
-  .index-seccion-principal p {
+  .color-header .nav-bar .index-seccion-principal .div-seccion-index p {
     font-size: 0.9375rem;
     word-spacing: 0.625rem;
     line-height: 1.5625rem;
     padding: 0.9375rem;
     margin: 1.25rem;
   }
-  .index-seccion-principal .container-index-grid2 {
+  .color-header .nav-bar .container-index-grid2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
@@ -422,8 +509,8 @@ ul {
   box-shadow: 5px 3px 15 px;
 }
 
-/*seccion ingreso*/
-.seccion-ingreso {
+/*formulario de contacto*/
+.container-registro form, .seccion-ingreso form {
   background-image: url(../assets/img/estilonatural.jpeg);
   background-repeat: no-repeat;
   background-size: 50%;
@@ -435,8 +522,44 @@ ul {
   gap: 0.3125rem;
   height: 100vh;
   width: 100%;
-  flex-wrap: wrap;
-  padding: 2.5rem;
+  overflow: hidden;
+  align-items: center;
+}
+.container-registro form h2, .seccion-ingreso form h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+}
+.container-registro form input, .seccion-ingreso form input {
+  width: 70%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  border-radius: 0.3125rem;
+  font-size: 1.25rem;
+  background-color: transparent;
+  text-align: justify;
+}
+
+textarea {
+  width: 70%;
+  border-radius: 0.3125rem;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+#enviar {
+  background-color: rgba(0, 128, 0, 0.411);
+  height: 5%;
+  width: 20%;
+  font-size: 1.25rem;
+  border-radius: 0.3125rem;
+  text-align: center;
+}
+
+/*seccion ingreso*/
+.seccion-ingreso {
+  background-color: white;
 }
 .seccion-ingreso .ingresa-aqui h1 {
   font-size: 2.5rem;
@@ -447,8 +570,8 @@ ul {
   font-size: 1.25rem;
   border-radius: 0.3125rem;
   text-align: center;
-  height: 50%;
-  width: 70%;
+  height: 800px;
+  width: 100%;
   font-size: 1.5625rem;
   padding: 60px;
 }
@@ -457,63 +580,8 @@ ul {
 }
 .seccion-ingreso .ingresar-class #enviar {
   background-color: rgba(0, 128, 0, 0.411);
-  height: 30px;
-  width: 60px;
-  font-size: 1.25rem;
-  border-radius: 0.3125rem;
-  text-align: center;
-}
-
-/*formulario de contacto*/
-.container-registro {
-  background-image: url(../assets/img/estilonatural.jpeg);
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: 50%;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.3125rem;
-}
-.container-registro .formulario-registro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.3125rem;
-}
-.container-registro .formulario-registro h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-transform: capitalize;
-}
-.container-registro .formulario-registro input {
-  width: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-transform: capitalize;
-  border-radius: 0.3125rem;
-  font-size: 1.25rem;
-  background-color: transparent;
-  text-align: center;
-}
-.container-registro .formulario-registro input::placeholder {
-  color: black;
-}
-.container-registro .formulario-registro textarea {
-  width: 70%;
-  border-radius: 0.3125rem;
-  font-size: 20px;
-  background-color: transparent;
-}
-.container-registro .formulario-registro #enviar {
-  background-color: rgba(0, 128, 0, 0.411);
-  height: 5%;
-  width: 20%;
+  height: 2.5rem;
+  width: 5rem;
   font-size: 1.25rem;
   border-radius: 0.3125rem;
   text-align: center;
