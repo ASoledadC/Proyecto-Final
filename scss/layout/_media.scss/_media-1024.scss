@@ -28,7 +28,7 @@
        
     }
 }  
- .container-grid2{
+ .container-index-grid2{
         .img1{
           width: 25rem;
           height: 25rem;
@@ -36,3 +36,17 @@
       }
          
 }
+
+/*catalogo media*/
+.seccion-catalogo{
+  
+              h2{
+justify-content: center;
+font-size: 1.25rem;
+              }
+              .catalogo-img{
+                justify-content: center;
+                align-items: center;
+                    
+              }
+            }

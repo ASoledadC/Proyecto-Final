@@ -1,26 +1,35 @@
 /* productos*/
-.mi-carousel{
-    width: 40%;
-}
-        .seccion-productos h2{
-        padding: 2.5rem;
-        justify-content: center;
-        font-size: 1.875rem;
-        text-align: center;
-        font-family: 'Libre Franklin', sans-serif;
-        text-decoration: underline;
-    }
-        .seccion-productos p {
-        text-align: center;
-        font-family: 'Libre Franklin', sans-serif;
-         } 
-
-.carousel-item{
-       img{
-   width: 31.25rem;
-    height: 31.25rem;
-    justify-content: center;
-    overflow: hidden;
-       }   
+.container-fluid{
+    .seccion-productos{
+        h2{
+            padding: 2.5rem;
+            justify-content: center;
+            font-size: 1.875rem;
+            text-align: center;
+            font-family: 'Libre Franklin', sans-serif;
+            text-decoration: underline;
+           }
+                  p {
+            text-align: center;
+            font-family: 'Libre Franklin', sans-serif;
+                   } 
 
 }
+        .mi-carousel{
+          width: 40%;
+          
+          
+                  
+        
+         
+
+          .carousel-item{
+                img{
+             width: 31.25rem;
+            height: 31.25rem;
+            justify-content: center;
+             overflow: hidden;
+                  }   
+              }
+            }
+        }

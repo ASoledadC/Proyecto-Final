@@ -35,7 +35,7 @@
               }
             }
           }
-        .container-grid2{
+        .container-index-grid2{
         @include grid ( 1fr  1fr, 1fr 1fr 1fr 1fr,"img1 img1" "img2 img2""img3 img3" "img4 img4",100%, 100vh);
         align-content: center;
            
