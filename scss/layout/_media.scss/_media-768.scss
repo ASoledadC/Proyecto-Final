@@ -19,16 +19,19 @@
             li{
                  a{
                   color: white; 
-                 
-          div{
+                 }
+                }
             .class-buscar {
             display: none;
-    }
-  }
+            
+                .input-buscar{
+              display: none;
+                        }
+                     }
 }
 }  
      }
-    }
+    
   .seccion-navegacion{
 background-color: rgba(128, 128, 128, 0.319);
 height: 5rem;
@@ -36,7 +39,7 @@ margin: 0%;
 padding-top: .625rem;
 justify-content: center;
 flex-direction: row;
-      
+      height: auto;
         .nav-href{
          li{
              a{
