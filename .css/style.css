@@ -1,0 +1,635 @@
+/*primero se llama a las vaiables, mixins y todo lo que corrresponda  a utilities   */
+/*ahora llamamamos todo lo que este en base*/
+/* en reset se suelen poner todos los estilos generales, tipografias, y tamb el reset*/
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Libre+Franklin:ital,wght@0,100;0,400;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  variables  */
+ul {
+  list-style: none;
+}
+
+/* ahora se llama a layout, todo lo que hay en esa carpeta*/
+.color-header {
+  background-color: rgb(5, 215, 5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 12.5rem;
+}
+.color-header .titulo-fonts img {
+  width: 6.25rem;
+  height: 6.25rem;
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
+}
+.color-header .titulo-fonts p {
+  text-align: left;
+  font-style: italic;
+  color: black;
+  font-size: 1.5625rem;
+  font-family: "EB Garamond", serif;
+  font-weight: 100;
+  margin-left: 1.25rem;
+  margin-top: 0.625rem;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: none;
+  gap: none;
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+.nav-bar li a {
+  display: flex;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 20px;
+}
+.nav-bar li a:hover {
+  color: bisque;
+  box-shadow: 3px 2px 15px;
+}
+
+/*seccion navegacion*/
+.seccion-navegacion {
+  background-color: rgb(218, 156, 39);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: none;
+  height: 9.375rem;
+  margin: 0%;
+  padding-top: 1.25rem;
+  flex-wrap: wrap;
+}
+.seccion-navegacion .nav-href {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.seccion-navegacion .nav-href li a {
+  border: 1px solid black;
+  padding: 10px 15px;
+  background-color: rgb(5, 215, 5);
+  text-decoration: none;
+  list-style: none;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.seccion-navegacion .nav-href li a:hover {
+  color: bisque;
+  box-shadow: 3px 2px 15px;
+}
+
+/*index*/
+.index-seccion-principal {
+  width: 100%;
+  height: 100vh;
+}
+.index-seccion-principal .container-index-grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: none;
+  width: 100%;
+  height: 100vh;
+}
+.index-seccion-principal .container-index-grid1 img {
+  width: 100%;
+  height: 100vh;
+  margin-top: 2.5rem;
+  margin-left: 1.875rem;
+  justify-items: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+.index-seccion-principal .container-index-grid1 div h1 {
+  padding: 2.5rem;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.875rem;
+  margin: 2.5rem;
+}
+.index-seccion-principal .container-index-grid1 div p {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.5625rem;
+  word-spacing: 1.25rem;
+  line-height: 3.125rem;
+  justify-content: center;
+  text-align: center;
+  padding: 2.5rem;
+  margin: 2.5rem;
+}
+
+.container-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "img1 img1" "img2 img2" "img3 img3" "img4 img4";
+  width: 100%;
+  height: 100vh;
+  align-content: center;
+}
+
+.img1, .img4, .img3, .img2 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 37.5rem;
+  height: 37.5rem;
+  object-fit: cover;
+  margin-top: 1.875rem;
+  margin-block-end: 10%;
+  margin: 50px;
+  margin-left: 100px;
+}
+
+.img2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.img3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.img4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+/*catalogo*/
+.seccion-catalogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  width: 100%;
+  height: auto;
+  margin: 1.875rem;
+}
+.seccion-catalogo h2 {
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.5625rem;
+  margin: 1.25rem;
+  text-decoration: underline;
+}
+.seccion-catalogo h2 .catalogo-img {
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 400px;
+}
+.seccion-catalogo .catalogo-class {
+  border-radius: 0.3125rem;
+  border-color: black;
+  background-color: orange;
+  justify-content: center;
+  padding: 0.625rem 0.9375rem;
+}
+.seccion-catalogo .catalogo-class .catalogo-a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1.25rem;
+}
+
+/*contactanos. html*/
+.seccion-contactos {
+  width: 100%;
+  height: 100vh;
+  padding-top: 2.5rem;
+}
+.seccion-contactos .contactanos h2 {
+  background-color: rgb(178, 231, 178);
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2.5rem;
+  padding: 3.125rem;
+  width: 100%;
+}
+.seccion-contactos .contactanos p {
+  width: 100%;
+  background-color: rgb(218, 216, 214);
+  text-align: center;
+  font-size: 1.875rem;
+  padding: 1.875rem;
+  padding-top: 2.5rem;
+  margin-top: 1.25rem;
+}
+.seccion-contactos .datos-contacto {
+  background-color: white;
+}
+.seccion-contactos .datos-contacto p {
+  font-size: 1.875rem;
+  padding: 2.1875rem;
+  text-align: center;
+}
+
+/*negocio.html*/
+.seccion-negocio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  width: 100%;
+  height: 100vh;
+}
+.seccion-negocio div h2 {
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.875rem;
+}
+.seccion-negocio div p {
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.5625rem;
+  word-spacing: 1.25rem;
+  line-height: 3.125rem;
+  padding: 2.5rem;
+  margin: 2.5rem;
+}
+
+.boton-negocio {
+  display: flex;
+  justify-content: center;
+}
+.boton-negocio .contactar-naranja {
+  background-color: orange;
+  border-color: rgb(52, 54, 54);
+  border-radius: 0.3125rem;
+  height: 50px;
+  width: 10%;
+  border: solid 0.125rem;
+}
+.boton-negocio .contactar-naranja :active {
+  text-shadow: 2px 2px 15px;
+  color: bisque;
+}
+.boton-negocio .contactar-naranja :active .class-contactanos {
+  text-decoration: none;
+  text-transform: capitalize;
+  list-style: none;
+  font-size: 1.25rem;
+  padding: 3.125rem;
+  align-items: center;
+  color: black;
+}
+
+/* productos*/
+.mi-carousel {
+  width: 40%;
+}
+
+.seccion-productos h2 {
+  padding: 2.5rem;
+  justify-content: center;
+  font-size: 1.875rem;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  text-decoration: underline;
+}
+
+.seccion-productos p {
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.carousel-item img {
+  width: 31.25rem;
+  height: 31.25rem;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/*seccion footer*/
+.container-pie-pagina {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+  gap: none;
+  background-color: rgb(133, 199, 133);
+  position: relative;
+  width: 100%;
+  height: 9.375rem;
+  padding-bottom: 1.25rem;
+}
+.container-pie-pagina .datos {
+  text-align: left;
+  padding: 1.25rem;
+}
+.container-pie-pagina .redes {
+  text-align: right;
+  padding-right: 1.25rem;
+  padding-top: 1.25rem;
+}
+
+/*aca van todos los componentes, de cards, botones, etc*/
+/*boton del header*/
+.nav-bar li a .class-buscar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  color: rgba(168, 182, 170, 0.585);
+}
+.nav-bar li a .input-buscar {
+  background-color: rgb(218, 216, 214);
+  padding: 0.1875rem;
+  border-style: ridge;
+  border-color: rgb(52, 54, 54);
+  border-width: 0.1875rem;
+}
+.nav-bar li a .input-buscar:active {
+  background-color: bisque;
+  border: none;
+  box-shadow: 5px 3px 15 px;
+}
+
+/*formulario de contacto*/
+.container-registro form, .seccion-ingreso form {
+  background-image: url(../assets/img/estilonatural.jpeg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3125rem;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+}
+.container-registro form h2, .seccion-ingreso form h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+}
+.container-registro form input, .seccion-ingreso form input {
+  width: 70%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  border-radius: 0.3125rem;
+  font-size: 1.25rem;
+  background-color: transparent;
+  text-align: justify;
+}
+
+textarea {
+  width: 70%;
+  border-radius: 0.3125rem;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+#enviar {
+  background-color: rgba(0, 128, 0, 0.411);
+  height: 5%;
+  width: 20%;
+  font-size: 1.25rem;
+  border-radius: 0.3125rem;
+  text-align: center;
+}
+
+/*seccion ingreso*/
+.seccion-ingreso {
+  background-color: white;
+}
+.seccion-ingreso .ingresa-aqui h1 {
+  font-size: 2.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+}
+.seccion-ingreso .ingresar-class {
+  font-size: 1.25rem;
+  border-radius: 0.3125rem;
+  text-align: center;
+  height: 800px;
+  width: 100%;
+  font-size: 1.5625rem;
+  padding: 60px;
+}
+.seccion-ingreso .ingresar-class input::placeholder {
+  color: black;
+}
+.seccion-ingreso .ingresar-class #enviar {
+  background-color: rgba(0, 128, 0, 0.411);
+  height: 2.5rem;
+  width: 5rem;
+  font-size: 1.25rem;
+  border-radius: 0.3125rem;
+  text-align: center;
+}
+
+/*media 1024*/
+@media (max-width: 1024px) {
+  .color-header {
+    justify-content: space-around;
+  }
+  .index-seccion-principal .container-index-grid1 img {
+    width: 25rem;
+    height: 25rem;
+  }
+  .index-seccion-principal .container-index-grid1 .div-seccion-index h1 {
+    padding: 1.25rem;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  .index-seccion-principal .container-index-grid1 .div-seccion-index p {
+    font-size: 0.9375rem;
+    padding: 0.9375rem;
+  }
+  .container-grid2 .img1, .container-grid2 .img2, .container-grid2 .img3, .container-grid2 .img4 {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+/*media querys 768 */
+@media (max-width: 768px) {
+  .color-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .color-header .titulo-fonts p {
+    color: white;
+    font-size: 0.9375rem;
+  }
+  .color-header nav .nav-bar {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .color-header nav .nav-bar li a {
+    color: white;
+  }
+  .color-header nav .nav-bar li a .class-buscar {
+    display: none;
+  }
+  .color-header nav .nav-bar li a .class-buscar .input-buscar {
+    display: none;
+  }
+  .seccion-navegacion {
+    background-color: rgba(128, 128, 128, 0.319);
+    height: 5rem;
+    margin: 0%;
+    padding-top: 0.625rem;
+    justify-content: center;
+    flex-direction: row;
+    height: auto;
+  }
+  .seccion-navegacion .nav-href li a {
+    color: white;
+  }
+  .index-seccion-principal .container-index-grid1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: auto;
+    justify-items: center;
+    margin-top: 10px;
+  }
+  .index-seccion-principal .container-index-grid1 img {
+    width: 25rem;
+    height: 25rem;
+    gap: none;
+    margin-top: none;
+  }
+  .index-seccion-principal .container-index-grid1 .div-seccion-index h1 {
+    font-size: 1.25rem;
+    padding: 0.3125rem;
+  }
+  .index-seccion-principal .container-index-grid1 .div-seccion-index p {
+    font-size: 0.9375rem;
+    word-spacing: 0.625rem;
+    line-height: 1.25rem;
+    padding: 0.0313rem;
+    margin: 0.9375rem;
+  }
+  .index-seccion-principal .container-index-grid2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.625rem;
+  }
+}
+/*media 425*/
+@media (max-width: 425px) {
+  .color-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .color-header .titulo-fonts .img {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+  .color-header .titulo-fonts p {
+    color: white;
+    font-size: 0.9375rem;
+  }
+  .color-header nav .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .color-header nav .nav-bar li a .class-buscar {
+    display: none;
+  }
+  .color-header nav .nav-bar li a .class-buscar .input-buscar {
+    display: none;
+  }
+  .seccion-navegacion {
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.319);
+    flex-direction: column;
+    justify-content: center;
+  }
+  .seccion-navegacion .nav-href {
+    height: 5px;
+    width: 10px;
+    margin: 0%;
+    padding-top: 0.3125rem;
+    justify-content: center;
+  }
+  .seccion-navegacion .nav-href li a {
+    color: white;
+  }
+  .index-seccion-principal .container-index-grid1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .index-seccion-principal .container-index-grid1 img {
+    width: 18.75rem;
+    height: 18.75rem;
+    gap: none;
+    margin-top: none;
+  }
+  .index-seccion-principal .container-index-grid1 .div-seccion-index h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin: 1.25rem;
+    padding: 0.625rem;
+  }
+  .index-seccion-principal .container-index-grid1 .div-seccion-index p {
+    text-align: center;
+    justify-content: center;
+    font-size: 0.625rem;
+    word-spacing: 0.625rem;
+    line-height: 1.5625rem;
+    margin: 0.625rem;
+    padding-bottom: 1.25rem;
+  }
+  .index-seccion-principal .container-index-grid2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .index-seccion-principal .container-index-grid2 .img1 .img2 .img3 .img4, .index-seccion-principal .container-index-grid2 .img2 .img2 .img3 .img4, .index-seccion-principal .container-index-grid2 .img3 .img2 .img3 .img4, .index-seccion-principal .container-index-grid2 .img4 .img2 .img3 .img4 {
+    width: 12.5rem;
+    height: 12.5rem;
+    margin-bottom: 2.5rem;
+    margin-top: 0%;
+    padding-block: 0px;
+  }
+}
+/*.grid-productos{
+
+flex-direction: column;
+grid-template-columns: 1fr ;
+grid-template-rows: repeat(4) 1fr;
+}*/
+
+/*# sourceMappingURL=style.css.map */

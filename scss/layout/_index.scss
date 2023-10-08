@@ -56,21 +56,23 @@
         }
           
                  .img2 {
+                  @extend .img1;
                   grid-column: 2/3;
                   grid-row: 1/2;
-                  @extend .img1;
-        }
+                       }
         
                  .img3 {
+                  @extend .img1;
             grid-column: 1/2;
             grid-row: 2/3;
-            @extend .img1;
+            
         }
         
                  .img4 {
+                  @extend .img1;
             grid-column: 2/3;
             grid-row: 2/3;
-            @extend .img1;
+            
         }
         
              
