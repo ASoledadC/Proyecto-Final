@@ -358,8 +358,7 @@ ul {
 /*media 1024*/
 @media (max-width: 1024px) {
   .color-header {
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
   }
   .index-seccion-principal .container-index-grid1 img {
     width: 25rem;
@@ -400,38 +399,45 @@ ul {
   .color-header .nav-bar li a div .class-buscar {
     display: none;
   }
-  .color-header .seccion-navegacion {
+  .seccion-navegacion {
     background-color: rgba(128, 128, 128, 0.319);
-    height: 75px;
+    height: 5rem;
     margin: 0%;
-    padding-top: 1.25rem;
+    padding-top: 0.625rem;
     justify-content: center;
     flex-direction: row;
   }
-  .color-header .seccion-navegacion .nav-href li a {
+  .seccion-navegacion .nav-href li a {
     color: white;
   }
-  .color-header .index-seccion-principal .container-index-grid1 {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+  .index-seccion-principal .container-index-grid1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: auto;
+    justify-items: center;
+    margin-top: 10px;
   }
-  .color-header .index-seccion-principal img {
-    width: 50%;
-    height: 100vh;
+  .index-seccion-principal .container-index-grid1 img {
+    width: 25rem;
+    height: 25rem;
+    gap: none;
+    margin-top: none;
   }
-  .color-header .index-seccion-principal .div-seccion-index h1 {
+  .index-seccion-principal .container-index-grid1 .div-seccion-index h1 {
     font-size: 1.25rem;
+    padding: 0.3125rem;
   }
-  .color-header .index-seccion-principal .div-seccion-index p {
+  .index-seccion-principal .container-index-grid1 .div-seccion-index p {
     font-size: 0.9375rem;
     word-spacing: 0.625rem;
-    line-height: 1.5625rem;
-    padding: 0.9375rem;
-    margin: 1.25rem;
+    line-height: 1.25rem;
+    padding: 0.0313rem;
+    margin: 0.9375rem;
   }
-  .color-header .container-index-grid2 {
+  .index-seccion-principal .container-index-grid2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 0.625rem;
   }
 }
 /*media 425*/
@@ -476,8 +482,8 @@ ul {
     grid-template-rows: 1fr;
   }
   .index-seccion-principal .container-index-grid1 img {
-    width: 50%;
-    height: 50%;
+    width: 18.75rem;
+    height: 18.75rem;
     margin-left: 1.875rem;
   }
   .index-seccion-principal .container-index-grid1 .div-seccion-index h1 {
@@ -496,18 +502,22 @@ ul {
     margin: 0.625rem;
     padding-bottom: 1.25rem;
   }
-  .index-seccion-principal .container-index-grid1 .container-index-grid2 {
-    width: 25rem;
-    height: 25rem;
-    margin-bottom: 2.5rem;
-    margin-top: 0%;
-    padding-block: 0px;
+  .index-seccion-principal .container-index-grid2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     /*.grid-productos{
 
     flex-direction: column;
     grid-template-columns: 1fr ;
     grid-template-rows: repeat(4) 1fr;
     }*/
+  }
+  .index-seccion-principal .container-index-grid2 .img1, .index-seccion-principal .container-index-grid2 .img2, .index-seccion-principal .container-index-grid2 .img3, .index-seccion-principal .container-index-grid2 .img4 {
+    width: 12.5rem;
+    height: 12.5rem;
+    margin-bottom: 2.5rem;
+    margin-top: 0%;
+    padding-block: 0px;
   }
 }
 /*aca van todos los componentes, de cards, botones, etc*/

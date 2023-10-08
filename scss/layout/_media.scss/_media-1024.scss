@@ -1,8 +1,7 @@
 /*media 1024*/
 @media(max-width: 1024px) {
 .color-header{
-    align-items: center;
-    justify-content: center;  
+    justify-content: space-around;  
     }
 
    .index-seccion-principal{
@@ -34,6 +33,6 @@
           width: 25rem;
           height: 25rem;
         }
-}
+      }
          
 }

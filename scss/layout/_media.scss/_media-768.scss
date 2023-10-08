@@ -28,11 +28,12 @@
 }
 }  
      }
+    }
   .seccion-navegacion{
 background-color: rgba(128, 128, 128, 0.319);
-height: 75px;
+height: 5rem;
 margin: 0%;
-padding-top: 1.25rem;
+padding-top: .625rem;
 justify-content: center;
 flex-direction: row;
       
@@ -48,34 +49,43 @@ flex-direction: row;
     .index-seccion-principal{
     
          .container-index-grid1{
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            
-   }
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            height: auto;
+            justify-items: center;
+            margin-top: 10px;
+           
    
                 img {
-                width: 50%;
-                height: 100vh; 
+                width: 25rem;
+                height: 25rem; 
+                gap: none;
+                margin-top: none;
+              
+                
+              
 }
        .div-seccion-index{
              h1 {
              font-size: 1.25rem;
+             padding: .3125rem;
     }
 
                p {
                font-size: .9375rem;
                word-spacing: .625rem;
-               line-height: 1.5625rem;
-               padding: .9375rem;
-               margin: 1.25rem;
+               line-height: 1.25rem;
+               padding: .0313rem;
+               margin: .9375rem;
 }
        }
        }
    .container-index-grid2{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: .625rem;
    }
 }
 
-}
 
+}
