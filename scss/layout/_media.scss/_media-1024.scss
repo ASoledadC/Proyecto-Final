@@ -1,7 +1,6 @@
 /*media 1024*/
 @media(max-width: 1024px) {
 .color-header{
-    flex-direction: row;
     align-items: center;
     justify-content: center;  
     }
@@ -9,8 +8,8 @@
    .index-seccion-principal{
        .container-index-grid1{
              img{ 
-    width: 100%;
-    height: 31.25rem;
+    width: 25rem;
+    height: 25rem;
     
 }
      .div-seccion-index{
@@ -30,6 +29,11 @@
        
     }
 }  
-
+ .container-grid2{
+        .img1{
+          width: 25rem;
+          height: 25rem;
+        }
+}
          
 }
