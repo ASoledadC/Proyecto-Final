@@ -1,5 +1,4 @@
-
-.color-header{
+ .color-header{
     background-color: $background;
     @include flex (row, space-between, center, none);
     flex-wrap: wrap;
@@ -15,8 +14,8 @@
                     &:hover{
                     transform: rotate(50deg);
                     }
-                }
-                p{
+               }
+                    p{
                     text-align: left;
                     font-style: italic;
                     color: $font-color;
@@ -25,10 +24,9 @@
                     font-weight: 100;
                      margin-left: 1.25rem;
                      margin-top: .625rem;
-                     
-            }              
-    } 
-             }
+                      }              
+              } 
+             
         .nav-bar{
             @include flex (row, space-around, none, none);
             list-style: none;
@@ -49,10 +47,24 @@
                     &:hover{
                         color: bisque;
                         box-shadow: 3px 2px 15px;  
+                            }
+                     }
+                    }
                 }
+           div{
+                 .class-buscar{
+                  @include flex (row, center, center, none);
 
-    }
-   }  
-}           
+                      .input-buscar {
+                    background-color: rgb(218, 216, 214); 
+                    padding:5px;
+                    border-style: ridge;
+                    border-color: rgb(52, 54, 54);
+                    border-width: 0.1875rem;
+                    @include active(bisque, none, 5px 3px 15px );  
+                                   }
+                              }
+                     }
+        }     
         
 
