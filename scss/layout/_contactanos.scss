@@ -31,8 +31,10 @@ padding-top: 2.5rem;
             font-size: 1.875rem;
             padding: 2.1875rem;
             text-align: center;
-            
-    
+            &:hover{
+                transform: scale(1.5);  
+                transition: 2s;  
+                    }
  }
 }
 }

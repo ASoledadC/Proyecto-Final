@@ -4,15 +4,16 @@
   height: 100vh;
   
         .container-index-grid1{
-          @include grid (1fr 1fr, 1fr 1fr 1fr, none, 100%, 100vh);
+          @include grid(1fr 1fr, 1fr 1fr 1fr, none, 100%, 100vh);
               img{
-            width: 100%;
-            height: 100vh;
+            width: 37.5rem;
+            height: 37.5rem;
             margin-top: 2.5rem;
             margin-left: 1.875rem;
             justify-items: center;
             align-items: center;
             gap: 1.25rem;
+            
              }
              div{
                      h1{
@@ -36,15 +37,11 @@
             }
           }
         .container-index-grid2{
-        @include grid ( 1fr  1fr, 1fr 1fr 1fr 1fr,"img1 img1" "img2 img2""img3 img3" "img4 img4",100%, 100vh);
+        @include grid(1fr 1fr, 1fr 1fr,"img1 img1" "img2 img2" "img3 img3" "img4 img4",100%, auto);
         align-content: center;
            
-              
-           }
                 .img1 {
-            grid-column: 1/2;
-            grid-row: 1/2;
-            
+            grid-area: "img1";
             width: 37.5rem;
             height: 37.5rem;
             object-fit: cover;
@@ -57,25 +54,20 @@
           
                  .img2 {
                   @extend .img1;
-                  grid-column: 2/3;
-                  grid-row: 1/2;
+                  grid-area: "img2";
                        }
         
                  .img3 {
                   @extend .img1;
-            grid-column: 1/2;
-            grid-row: 2/3;
-            
-        }
+                  grid-area: "img3"; 
+                       }
         
                  .img4 {
                   @extend .img1;
-            grid-column: 2/3;
-            grid-row: 2/3;
-            
-        }
+                  grid-area: "img4"; 
+                      }
         
-             
+                    }
 
           
 

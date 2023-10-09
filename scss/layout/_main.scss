@@ -14,10 +14,10 @@
                      margin: 20px;
                      gap: 60px;
                      flex-wrap: wrap;
-                     
                        li{
                            a{
                     border: 1px solid black;
+                    border-radius:5px;
                     padding: 10px 15px;
                     background-color: $background;
                     text-decoration: none;
@@ -28,14 +28,11 @@
                     font-family: Arial, Helvetica, sans-serif;
                        &:hover {
                         color: bisque;
-                        box-shadow: 3px 2px 15px; 
-                }
-            }
-          
-
-            }  
-                   
+                        box-shadow: 3px 2px 15px;
+                     }
                     }
-                }
+                 }  
+             }
+          }
             
     

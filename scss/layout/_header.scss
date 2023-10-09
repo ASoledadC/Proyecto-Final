@@ -11,7 +11,10 @@
                     width: 6.25rem;
                     height: 6.25rem;
                     margin-top: 1.25rem;
-                    margin-left: 1.25rem;  
+                    margin-left: 1.25rem; 
+                    &:hover{
+                    transform: rotate(50deg);
+                    }
                 }
                 p{
                     text-align: left;
