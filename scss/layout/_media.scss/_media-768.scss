@@ -20,8 +20,8 @@
                  a{
                   color: white; 
                      }
-}
-}  
+            }
+       }  
      }
 }
 
@@ -70,6 +70,7 @@ justify-content: center;
                   }
                }
        }
+      }
    .container-index-grid2{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -80,12 +81,15 @@ justify-content: center;
   "img3"
   "img4";
            .img1{
-width: 18.75rem;
-height:18.75rem;
+width: 31.25rem;
+height: 31.25rem;
+margin-top: none;
+margin-left: 9.375rem;
+justify-content: center;
              }
 }
 }
-}
+
 
 /*catalogo*/
 .seccion-catalogo{
@@ -97,4 +101,19 @@ height:18.75rem;
     .catalogo-img{
 padding-left: 6.25rem;
 }
+}
+/*contactanos*/
+.contactanos{
+  h2{
+  font-size: 1.5625rem;
+        padding: 1.875rem;
+  }
+  p{
+    font-size: 1.25rem;
+    padding: 1.25rem; 
+  }
+  .datos-contactos{
+    font-size: .9375rem;
+            padding:.625rem ;
+  }
 }

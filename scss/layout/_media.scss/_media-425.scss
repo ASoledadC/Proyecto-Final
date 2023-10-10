@@ -24,6 +24,7 @@
         justify-content: center;
             }
           }
+        
     div{
           .class-buscar {
                    display: none;
@@ -34,7 +35,7 @@
                            }
           }
           }
-        }
+        
     
 
    .seccion-navegacion {
@@ -89,7 +90,7 @@
                   } 
               }
             }
-  
+          }
 
   .container-index-grid2{
     grid-template-columns: 1fr;
@@ -99,12 +100,13 @@
          width: 12.5rem;
          height: 12.5rem;
          margin-bottom: 2.5rem;
-         margin-top: 0%;
-        
+         margin-top: none;
+        margin-left: none;
+        margin-right: 3.125rem;
                }
              }
-         }
-      
+         
+            
  
     
      /*catalogo*/
@@ -114,10 +116,11 @@
         margin: .625rem;
       }
         .catalogo-img{
-           width: auto;
-         height: auto;
+           width: 100px;
+         height: 7.5rem;
          padding: none;
          padding-left: none;
+         margin: 0%;
 
         }
      }
@@ -125,15 +128,20 @@
         
     /*contactanos*/
     .contactanos{
+      
             h2{
-            font-size: 1.5625rem;
-      }
+            font-size: 1.25rem;
+            padding: 1.25rem;
+              }
              p{
-            font-size: .9375rem;
-   }
-   .datos-contacto{
+            font-size: .625rem;
+            padding: .625rem;
+            }
+      .datos-contacto{
     background-color: rgb(248, 220, 169);
-    font-size: 1.25rem;
+    font-size: .625rem;
+    padding: .3125rem;
+
    }
     }
 
@@ -148,6 +156,8 @@
          img{
       width: 31.25rem;
       height: 18.75rem;
+         
+         }
+        }
+      }
     }
-}
-}

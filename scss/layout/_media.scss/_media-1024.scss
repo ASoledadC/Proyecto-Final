@@ -9,9 +9,10 @@
              img{ 
     width: 25rem;
     height: 25rem;
-    margin-left: 10px;
+    margin-left: .3125rem;
     gap: 10px;
-}
+    margin-left: none;
+               }
      .div-seccion-index{
             h1{
     padding: 1.25rem;
@@ -22,11 +23,10 @@
               font-size: .9375rem;
              padding: .9375rem; 
             }      
-
-   }
-  }   
+       }
+     }   
     }
-  }
+  
  
  .container-index-grid2{
         .img1, .img2, .img3, .img4{
@@ -41,6 +41,7 @@
 /*catalogo media*/
 .seccion-catalogo{
   .catalogo-img{
-    padding-left: 9.375rem; 
+    padding-left: 15.625rem; 
   }
+}
 }

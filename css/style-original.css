@@ -133,8 +133,8 @@ box-shadow: 3px 2px 15px;
     height: 100vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-}
-
+           }
+        
 .container-index-grid2 {
     display: grid;
     width: 100%;

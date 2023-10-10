@@ -16,23 +16,22 @@
                      flex-wrap: wrap;
                        li{
                            a{
-                    border: 1px solid black;
-                    border-radius:5px;
-                    padding: 10px 15px;
-                    background-color: $background;
-                    text-decoration: none;
-                    list-style: none;
-                    text-transform: capitalize;
-                    font-size: 1.25rem;
-                    color: black;
-                    font-family: Arial, Helvetica, sans-serif;
-                       &:hover {
-                        color: bisque;
-                        box-shadow: 3px 2px 15px;
+                            background-color: rgb(5, 215, 5);
+                            text-decoration: none;
+                            padding: 1.25rem;
+                            border: solid .0625rem;
+                            border-radius: .3125rem;
+                            border-color: rgb(52, 54, 54);
+                            margin-top: 1.5625rem;
+                           color: black;
+                           font-family: Arial, Helvetica, sans-serif;
+                                &:hover {
+                                color: bisque;
+                                box-shadow: 3px 2px 15px;
+                                  }
+                             }
+                        }  
                      }
-                    }
-                 }  
-             }
-          }
+                }
             
     
