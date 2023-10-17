@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +15,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Libre+Franklin:ital,wght@0,100;0,400;1,100&display=swap"
         rel="stylesheet">
+<link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons" /> <!-- material icon-->
+
 <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -23,8 +24,8 @@
 <body>
     <header class="color-header">
         <div class="titulo-fonts">
-            <img src="./assets/img/Estilonatural (1).jpeg" alt="estilonatural-logo" class="img-header">
-            <p>Tienda de productos naturales</p>
+        <img src="./assets/img/Estilonatural (1).jpeg" alt="estilonatural-logo" class="img-header">
+           <p>Tienda de productos naturales</p>
         </div>
 
         <nav>
@@ -36,49 +37,41 @@
                     <a href="./pages/ingreso.html">Ingreso</a>
                 </li>
             </ul>
-            <div>
-                <fieldset class="class-buscar">
-                    <input type="text" class="input-buscar" placeholder="Buscar">
-                </fieldset>
+            
             </div>
-        </nav >
+        </nav>
     </header>  
 
     <main>
-        <section class="seccion-navegacion">
-            <ul class="nav-href">
-                <li>
-                        <a href="./pages/catalogo.html">Catalogo</a>
-                </li>
-                <li>
-                        <a href="./pages/contactanos.html"> Contactanos</a>
-                </li>
-                <li>
-                        <a href="./pages/negocio.html">Negocio</a> 
-                </li>
-                <li>
-                        <a href="./pages/productos.html">Destacados</a>
-                </li>
-            </ul>
+       <section class="seccion-navegacion">
+        <div>
+                <a class="logo" href="">Secciones</a>
+                <input type="checkbox" name="" id="toggle">
+               <label for="toggle"><i class="material-icons">menu</i></label>
+               <div class="Menu">
+                <ul class="ul-pages">
+                    <li><a href="./pages/catalogo.html">Catalogo</a></li>
+                    <li><a href="./pages/contactanos.html">Contactanos</a></li>
+                    <li><a href="./pages/negocio.html">Negocio</a></li>
+                    <li><a href="./pages/productos.html">Destacados</a></li>
+                </ul>
+            </div>
+        </div>
         </section>
 
         <section class="index-seccion-principal">
-            <div class="container-index-grid1">
-                <img src="./assets/img/estilonatural.jpeg" alt="estilonatural-logo">
-                <div class="div-seccion-index">
+            <div class="container-index1">
                     <h1>Tienda de productos naturales</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ipsum libero autem voluptas
-                        delectus exercitationem expedita, animi similique quam deserunt tempore,
-                        sit architecto dolores voluptates quo corrupti facilis cupiditate. In?
-                    </p>
-                </div>
+                    <p>Estilo Natural es una tienda de productos de nutrición, venta directa y multinivel que se ha expandido por toda Argentina. 
+                     Nuestros productos son efectivos junto a un estilo de vida activo y saludable porque son elaborados con los mejores ingredientes provenientes de diversas partes del mundo</p>
+            </div>    
         </section>
         <section>
             <div class="container-index-grid2">
-                <img class="img1" src="./assets/img/aloe.jpeg" alt="">
-                <img class="img2" src="./assets/img/colageno.jpeg" alt="">
-                <img class="img3" src="./assets/img/batido.jpeg" alt="">
-                <img class="img4" src="./assets/img/beverage.jpeg" alt="">
+                <img class="img1" src="./assets/img/aloe.jpeg" alt="aloe-img">
+                <img class="img2" src="./assets/img/colageno.jpeg" alt="colageno-img">
+                <img class="img3" src="./assets/img/batido.jpeg" alt="batido-img">
+                <img class="img4" src="./assets/img/beverage.jpeg" alt="beverage-img">
             </div>
         </section>
     </main>
@@ -90,9 +83,9 @@
 
         <div class="redes">
             <a href="https://instagram.com/estilonatural_hbl?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">
-                <img src="./assets/img/instagram.png" alt=""></a>
+                <img src="./assets/img/instagram.png" alt="Instagram"></a>
             <a href="https://wa.me/message/U7HJCYO6MSLVN1" target="_blank">
-                <img src="./assets/img/whatsapp.png" alt=""></a>
+                <img src="./assets/img/whatsapp.png" alt="whatsapp"></a>
         </div>
 
     </footer>

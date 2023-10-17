@@ -11,27 +11,24 @@
                     height: 6.25rem;
                     margin-top: 1.25rem;
                     margin-left: 1.25rem; 
-                    &:hover{
-                    transform: rotate(50deg);
+                    border: 1px solid orange;
+                           }
+                p{ 
+                        text-align: left;
+                        font-style: italic;
+                        text-transform: uppercase;
+                        color: $font-color;
+                        font-size: 1.25rem;
+                        font-family: 'EB Garamond', serif;
+                        font-weight: 80;
+                        margin-left: 1.25rem
+                       }
                     }
-               }
-                    p{
-                    text-align: left;
-                    font-style: italic;
-                    color: $font-color;
-                    font-size: 1.5625rem;
-                    font-family: 'EB Garamond', serif;
-                    font-weight: 100;
-                     margin-left: 1.25rem;
-                     margin-top: .625rem;
-                      }              
-              } 
-             
         .nav-bar{
             @include flex (row, space-around, none, none);
             list-style: none;
             text-decoration: none;
-            text-transform: uppercase;
+            text-transform: capitalize;
             font-size: $font-size;
             margin: 20px;
             flex-wrap: wrap;
@@ -39,9 +36,9 @@
                    a{ 
                     display: flex;
                     text-decoration: none;
-                    text-transform: capitalize;
+                    text-transform: uppercase;
                     font-size: $font-size;
-                    color: $font-color;
+                    color: rgb(63, 61, 61);
                     font-family: Arial, Helvetica, sans-serif;
                     padding-right: 20px;
                     &:hover{
@@ -50,21 +47,10 @@
                             }
                      }
                     }
-                }
-           div{
-                 .class-buscar{
-                  @include flex (row, center, center, none);
-
-                      .input-buscar {
-                    background-color: rgb(218, 216, 214); 
-                    padding:5px;
-                    border-style: ridge;
-                    border-color: rgb(52, 54, 54);
-                    border-width: 0.1875rem;
-                    @include active(bisque, none, 5px 3px 15px );  
-                                   }
-                              }
-                     }
-        }     
-        
+                
+          
+                
+                                  }
+                            }
+                       
 
