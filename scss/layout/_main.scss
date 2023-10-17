@@ -11,25 +11,32 @@ margin: 0;
             background-color: orange;
             padding: 2rem 2rem;
             box-shadow: 5px 5px 5px rgb(125, 235, 149);
-                   
-                       
+           
+                      
             .logo{
             font-weight: 700;
             font-size: 1.5625rem;
             text-decoration: none;
             color: gray;
-                              } 
-             #toggle, label{
-               display: none;      
-                       }                 
-                                
-                                                
-            .ul-pages{
+                   } 
+                   label{      
+                    display:flex;
+                    color: black;
+                     cursor: pointer; 
+                   }
+              #toggle, label{
+                display: none;      
+                       }                    
+          .menu{                                      
+                .ul-pages{
                 list-style: none;
+                text-decoration: none;
                 display: flex;
                  gap: 2.1875rem;
-                        
-                   a{
+                 
+                    li{
+                        a{
+                 background-color: rgb(5, 215, 5); 
                  text-decoration: none;
                 color: black;
                 font-size: 1.25rem;
@@ -40,9 +47,12 @@ margin: 0;
                            }
                         }  
                       } 
+             
+             
+                   }
                        
                             }
             
-                                               
+                                        
         
-                        
+                          }
