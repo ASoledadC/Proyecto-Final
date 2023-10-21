@@ -14,98 +14,50 @@ ul {
 }
 
 /* ahora se llama a layout, todo lo que hay en esa carpeta*/
-.color-header {
-  background-color: rgb(5, 215, 5);
+header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: none;
-  flex-wrap: wrap;
+  background-color: orange;
   width: 100%;
-  height: 12.5rem;
+  height: auto;
+  margin: 0 auto;
+  padding: 1rem;
+  border-bottom: 2px solid orange;
+  align-items: center;
+  justify-content: space-between;
 }
-.color-header .titulo-fonts img {
+header div img {
   width: 6.25rem;
   height: 6.25rem;
   margin-top: 1.25rem;
   margin-left: 1.25rem;
-  border: 1px solid orange;
+  border: 2.5px solid rgb(11, 234, 11);
 }
-.color-header .titulo-fonts p {
-  text-align: left;
-  font-style: italic;
-  text-transform: uppercase;
-  color: black;
-  font-size: 1.25rem;
+header div p {
+  justify-content: left;
+  padding: 1.25rem;
+  text-align: center;
   font-family: "EB Garamond", serif;
-  font-weight: 80;
-  margin-left: 1.25rem;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: black;
 }
-.color-header .nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: none;
-  gap: none;
+header div .navbar li {
+  text-indent: 15px;
+}
+header div .navbar li a {
   list-style: none;
-  text-decoration: none;
   text-transform: capitalize;
-  font-size: 1.25rem;
-  margin: 20px;
-  flex-wrap: wrap;
-}
-.color-header .nav-bar li a {
-  display: flex;
   text-decoration: none;
-  text-transform: uppercase;
   font-size: 1.25rem;
-  color: rgb(63, 61, 61);
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
-  padding-right: 20px;
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.color-header .nav-bar li a:hover {
+header div .navbar li a:hover {
   color: bisque;
   box-shadow: 3px 2px 15px;
-}
-
-/*seccion navegacion*/
-.seccion-navegacion {
-  width: 100%;
-  height: 9.375rem;
-  margin: 0;
-}
-.seccion-navegacion div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: orange;
-  padding: 2rem 2rem;
-  box-shadow: 5px 5px 5px rgb(125, 235, 149);
-}
-.seccion-navegacion div .logo {
-  font-weight: 700;
-  font-size: 1.5625rem;
-  text-decoration: none;
-  color: gray;
-}
-.seccion-navegacion div #toggle, .seccion-navegacion div label {
-  display: none;
-}
-.seccion-navegacion div .ul-pages {
-  list-style: none;
-  display: flex;
-  gap: 2.1875rem;
-}
-.seccion-navegacion div .ul-pages a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.25rem;
-}
-.seccion-navegacion div .ul-pages a:hover {
-  color: bisque;
-  box-shadow: 0.3125rem;
 }
 
 /*index*/
@@ -183,48 +135,63 @@ ul {
 }
 
 /*catalogo*/
-.seccion-catalogo {
+body {
+  overflow-x: hidden;
+}
+body .seccion-catalogo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: none;
   width: 100%;
-  height: auto;
-  margin: 1.875rem;
-  overflow-x: hidden;
+  height: 100vh;
 }
-.seccion-catalogo h2 {
+body .seccion-catalogo h1 {
+  background-color: rgb(178, 237, 196);
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   margin: 1.25rem;
-  text-decoration: underline;
+  text-transform: uppercase;
+  padding: 2.5rem;
 }
-.seccion-catalogo h2 .catalogo-img {
+body .seccion-catalogo .catalogo-img {
   align-items: center;
   justify-content: center;
-  width: 18.75rem;
-  height: 18.75rem;
+  width: 80%;
+  height: 70%;
+  text-align: center;
 }
-.seccion-catalogo .catalogo-class {
+body .seccion-catalogo img {
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+}
+body .seccion-catalogo .catalogo-class {
   border-radius: 0.3125rem;
   border-color: black;
   background-color: orange;
   justify-content: center;
   padding: 0.625rem 0.9375rem;
+  margin-top: 0.625rem;
 }
-.seccion-catalogo .catalogo-class .catalogo-a {
+body .seccion-catalogo .catalogo-class .catalogo-a {
   text-decoration: none;
   text-transform: capitalize;
-  font-size: 1.25rem;
+  font-size: 0.9375rem;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 1.25rem;
 }
 
 /*contactanos. html*/
 .seccion-contactos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
   padding-top: 2.5rem;
@@ -233,9 +200,11 @@ ul {
   background-color: rgb(178, 231, 178);
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.875rem;
+  text-transform: uppercase;
   padding: 3.125rem;
   width: 100%;
+  margin-top: 3.125rem;
 }
 .seccion-contactos .contactanos p {
   width: 100%;
@@ -248,9 +217,10 @@ ul {
 }
 .seccion-contactos .datos-contacto {
   background-color: white;
+  flex-wrap: wrap;
 }
 .seccion-contactos .datos-contacto p {
-  font-size: 1.875rem;
+  font-size: 1.5625rem;
   padding: 2.1875rem;
   text-align: center;
 }
@@ -269,12 +239,14 @@ ul {
   width: 100%;
   height: 100vh;
 }
-.seccion-negocio div h2 {
+.seccion-negocio div h1 {
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.5625rem;
+  text-transform: uppercase;
 }
 .seccion-negocio div p {
+  background-color: rgb(185, 245, 185);
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
   font-size: 1.5625rem;
@@ -283,25 +255,24 @@ ul {
   padding: 2.5rem;
   margin: 2.5rem;
 }
-
-.boton-negocio {
+.seccion-negocio .boton-negocio {
   display: flex;
   justify-content: center;
 }
-.boton-negocio .contactar-naranja {
+.seccion-negocio .boton-negocio .contactar-naranja {
   background-color: orange;
   border-color: rgb(52, 54, 54);
   border-radius: 0.3125rem;
-  height: 50px;
-  width: 10%;
+  height: 3.125rem;
+  width: 6.25rem;
   border: solid 0.125rem;
 }
-.boton-negocio .contactar-naranja:hover {
+.seccion-negocio .boton-negocio .contactar-naranja:hover {
   transform: scale(1.5);
   transition: 2s;
   color: red;
 }
-.boton-negocio .contactar-naranja .class-contactanos {
+.seccion-negocio .boton-negocio .contactar-naranja .class-contactanos {
   text-decoration: none;
   text-transform: capitalize;
   list-style: none;
@@ -312,26 +283,72 @@ ul {
 }
 
 /* productos*/
-.container-fluid .seccion-productos h2 {
-  padding: 2.5rem;
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.container-fluid .seccion-productos {
+  background-color: rgb(178, 237, 196);
+  margin-top: 1.25rem;
+  flex-direction: row;
+  height: auto;
+}
+.container-fluid .seccion-productos h1 {
+  margin-top: 6.25rem;
+  padding: 1.25rem;
   justify-content: center;
   font-size: 1.875rem;
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
-  text-decoration: underline;
+  text-decoration: uppercase;
 }
 .container-fluid .seccion-productos p {
+  justify-content: center;
+  padding-bottom: 1.875rem;
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
+  font-size: 1.0625rem;
+  margin: 1.25rem 1.875rem;
 }
-.container-fluid .mi-carousel {
-  width: 40%;
-}
-.container-fluid .mi-carousel .carousel-item img {
-  width: 31.25rem;
-  height: 31.25rem;
+.container-fluid .row {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.container-fluid .row .col .card {
+  text-align: center;
+  width: 80%;
+  height: 60%;
+  margin: 3.125rem;
+  border-radius: 0.625rem;
+  border: 2px solid orange;
+}
+.container-fluid .row .col .card img {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
+}
+.container-fluid .row .col .card .card-body h5 {
+  text-align: center;
+  font-size: 1.25rem;
+  color: rgb(10, 231, 157);
+  padding: 0.9375rem;
+  margin-bottom: 1.25rem;
+}
+.container-fluid .row .col .card .card-body p {
+  text-align: justify;
+  font-size: 1.25rem;
+  color: black;
+  padding: 0.625rem;
 }
 
 /*seccion footer*/
@@ -378,8 +395,8 @@ ul {
 
 h1 {
   font-size: 1.5625rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-transform: capitalize;
+  font-family: "Libre Franklin", sans-serif;
+  text-transform: uppercase;
   justify-content: center;
   text-align: center;
   padding-top: 2.5rem;
@@ -440,12 +457,8 @@ textarea {
 
 /*media 1024*/
 @media (max-width: 1024px) {
-  .color-header {
-    justify-content: space-around;
-  }
   .index-seccion-principal {
     background-size: 60%;
-    /*catalogo media*/
   }
   .index-seccion-principal .container-index1 h1 {
     font-size: 1.5625rem;
@@ -454,55 +467,28 @@ textarea {
   .index-seccion-principal .container-index1 p {
     font-size: 0.9375rem;
   }
-  .index-seccion-principal .seccion-catalogo .catalogo-img {
-    padding-left: 15.625rem;
+  .seccion-contactos .contactanos h1 {
+    font-size: 1.875rem;
+  }
+  .seccion-contactos .contactanos p {
+    font-size: 1.25rem;
+  }
+  .seccion-contactos .datos-contacto {
+    font-size: 1.25rem;
+  }
+  .container-fluid .seccion-productos h1 {
+    font-size: 1.25rem;
   }
 }
 /*media querys 768 */
 @media (max-width: 768px) {
-  .color-header {
-    flex-direction: row;
-  }
-  .color-header .titulo-fonts p {
-    color: white;
-    font-size: 0.9375rem;
-  }
-  .color-header nav .nav-bar {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .color-header nav .nav-bar li a {
-    color: white;
-  }
-  /*media 768*/
-  .seccion-navegacion div {
-    display: flex;
-  }
-  .seccion-navegacion div label {
-    display: flex;
-    color: white;
-    cursor: pointer;
-  }
-  .seccion-navegacion div label #toggle:checked ~ .menu {
-    height: 100%;
-  }
-  .seccion-navegacion div .menu {
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-  }
-  .seccion-navegacion div .menu .ul-pages {
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 0.5rem 0;
-  }
   .index-seccion-principal {
     background-size: 70%;
   }
   .index-seccion-principal .container-index1 h1 {
     font: size 15px;
-    margin: 1.25rem;
-    padding-top: 0.9375rem;
+    margin: 1.875rem;
+    padding-top: none;
   }
   .index-seccion-principal .container-index1 p {
     font-size: 0.625rem;
@@ -520,60 +506,77 @@ textarea {
     width: 70%;
   }
   /*catalogo*/
-  .seccion-catalogo {
-    flex-direction: column;
+  body .seccion-catalogo h1 {
+    font-size: 0.9375rem;
   }
-  .seccion-catalogo h2 {
-    font-size: 1.25rem;
+  body .seccion-catalogo .catalogo-img {
+    width: 90%;
+    height: auto;
   }
-  .seccion-catalogo .catalogo-img {
-    padding-left: 6.25rem;
+  body .seccion-catalogo .catalogo-img img {
+    width: 45%;
+    height: auto;
+  }
+  body .seccion-catalogo .catalogo-class {
+    background-color: orange;
+    padding: 0.3125rem 0.1875rem;
   }
   /*contactanos*/
-  .contactanos h2 {
-    font-size: 1.5625rem;
+  .seccion-contactos {
+    padding-top: 1.25rem;
+  }
+  .seccion-contactos .contactanos h2 {
+    font-size: 1.25rem;
+    padding: 3.125rem;
+    padding-top: 50px;
+    margin-top: 0.625rem;
+  }
+  .seccion-contactos .contactanos p {
+    font-size: 1.25rem;
     padding: 1.875rem;
   }
-  .contactanos p {
-    font-size: 1.25rem;
-    padding: 1.25rem;
-  }
-  .contactanos .datos-contactos {
+  .seccion-contactos .datos-contactos p {
     font-size: 0.9375rem;
     padding: 0.625rem;
+    padding-bottom: 1.25rem;
+  }
+  /*seccion-negocio*/
+  .seccion-negocio {
+    flex-direction: column;
+    height: auto;
+  }
+  .seccion-negocio div h1 {
+    font-size: 1.25rem;
+  }
+  .seccion-negocio div p {
+    font-size: 0.9375rem;
+  }
+  .seccion-negocio div .boton-negocio .contactar-naranja {
+    margin-bottom: 1.875rem;
+  }
+  .seccion-negocio div .boton-negocio .contactar-naranja .class-contactanos {
+    font-size: 0.9375rem;
+  }
+  /*productos - destacados*/
+  .container-fluid .seccion-productos h1 {
+    padding: 2.5rem;
+    margin-top: none;
+  }
+  .container-fluid .row .col .card .card-body p {
+    font-size: 0.9375rem;
+  }
+  /*ingreso*/
+  .seccion-ingreso .ingresa-aqui {
+    padding: 2.5rem;
+    font-size: 0.9375rem;
+  }
+  .seccion-ingreso .ingresar-class {
+    font-size: 0.9375rem;
+    padding: 1.875rem;
   }
 }
-/*media 425*/
-@media (max-width: 425px) {
-  .color-header {
-    justify-content: center;
-    height: 9.375rem;
-  }
-  .color-header .titulo-fonts .img {
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-top: 0.625rem;
-    margin-left: 0.3125rem;
-  }
-  .color-header .titulo-fonts p {
-    color: white;
-    font-size: 0.625rem;
-    font-weight: 80;
-    padding-bottom: 0.3125rem;
-  }
-  .color-header nav .nav-bar {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.5rem;
-    gap: 1.25rem;
-  }
-  .color-header nav .nav-bar li a {
-    font-size: 0.625rem;
-  }
-  .seccion-navegacion div {
-    background-color: rgb(192, 188, 188);
-  }
+/*media 424*/
+@media (max-width: 424px) {
   .index-seccion-principal {
     background-size: 70%;
     height: auto;
@@ -595,40 +598,67 @@ textarea {
     padding-top: 0.1875rem;
   }
   /*catalogo*/
-  .seccion-catalogo {
-    height: 37.5rem;
+  body .seccion-catalogo {
+    height: auto;
   }
-  .seccion-catalogo h2 {
-    margin: 0.625rem;
+  body .seccion-catalogo h1 {
+    background-color: rgb(229, 227, 222);
+    font-size: 0.9375rem;
+    padding-top: 3.125rem;
   }
-  .seccion-catalogo .catalogo-img {
-    width: 100px;
-    height: 7.5rem;
-    padding: none;
-    padding-left: none;
-    margin: 0%;
+  body .seccion-catalogo .catalogo-img {
+    width: 80%;
+  }
+  body .seccion-catalogo .catalogo-img img {
+    width: 80%;
+  }
+  body .seccion-catalogo .catalogo-class {
+    padding: 0.3125rem 0.1875rem;
+    margin-bottom: 0.625rem;
+  }
+  body .seccion-catalogo .catalogo-class .catalogo-a {
+    font-size: 0.625rem;
   }
   /*contactanos*/
-  .contactanos h2 {
+  .seccion-contactos .contactanos {
+    padding-top: none;
+  }
+  .seccion-contactos .contactanos h2 {
+    background-color: rgb(246, 194, 138);
     font-size: 1.25rem;
-    padding: 1.25rem;
+    margin-top: none;
   }
-  .contactanos p {
-    font-size: 0.625rem;
-    padding: 0.625rem;
+  .seccion-contactos .contactanos p {
+    background-color: rgb(190, 187, 187);
   }
-  .contactanos .datos-contacto {
-    background-color: rgb(248, 220, 169);
+  .seccion-contactos .datos-contactos p {
     font-size: 0.625rem;
-    padding: 0.3125rem;
+    padding-bottom: 1.25rem;
+  }
+  /*seccion-negocio*/
+  .seccion-negocio div h1 {
+    font-size: 0.9375rem;
+  }
+  .seccion-negocio div p {
+    font-size: 0.75rem;
+  }
+  .seccion-negocio div .boton-negocio .contactar-naranja .class-contactanos {
+    font-size: 0.625rem;
   }
   /*productos - destacados*/
-  .container-fluid .seccion-productos h2 {
-    font-size: 1.25rem;
+  .container-fluid .seccion-productos {
+    margin-top: 1.25rem;
+    background-color: rgb(229, 227, 222);
   }
-  .container-fluid .carousel-item img {
-    width: 31.25rem;
-    height: 18.75rem;
+  .container-fluid .seccion-productos h1 {
+    font-size: 1.25rem;
+    margin-top: none;
+  }
+  .container-fluid .row {
+    flex-direction: column;
+  }
+  .container-fluid .row .col .card .card-body p {
+    font-size: 0.625rem;
   }
 }
 

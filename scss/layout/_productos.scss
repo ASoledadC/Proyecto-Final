@@ -1,35 +1,84 @@
 /* productos*/
 .container-fluid{
-    .seccion-productos{
-        h2{
-            padding: 2.5rem;
-            justify-content: center;
-            font-size: 1.875rem;
-            text-align: center;
-            font-family: 'Libre Franklin', sans-serif;
-            text-decoration: underline;
-           }
-                  p {
-            text-align: center;
-            font-family: 'Libre Franklin', sans-serif;
-                   } 
-
-}
-        .mi-carousel{
-          width: 40%;
-          
-          
-                  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+       .seccion-productos{
+        background-color: rgb(178, 237, 196);
+        margin-top: 1.25rem;
+        flex-direction: row;
+        height: auto;
         
-         
+                   h1{
+                    margin-top: 6.25rem;
+                    padding: 1.25rem;
+                    justify-content: center;
+                    font-size: 1.875rem;
+                    text-align: center;
+                    font-family: 'Libre Franklin', sans-serif;
+                    text-decoration: uppercase;
+                      }
+                       p {
+                        justify-content: center;
+                        padding-bottom: 1.875rem;
+                        text-align: center;
+                        font-family: 'Libre Franklin', sans-serif;
+                        font-size: 1.0625rem;  
+                        margin: 1.25rem 1.875rem;
+                         } 
+                      }
 
-          .carousel-item{
-                img{
-             width: 31.25rem;
-            height: 31.25rem;
+       .row{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       height: auto;
+                     
+          .col{
+        
+                 .card{
+        text-align: center;
+        width: 80%;
+        height: 60%;
+        margin: 3.125rem;
+       
+       
+        border-radius: .625rem;
+        border: 2px solid orange;
+        
+               img{
+            width: 100%;
+            height: 100%;
             justify-content: center;
-             overflow: hidden;
-                  }   
-              }
+            align-items: center;
+            overflow: hidden;
+          
+               }  
+               
+               .card-body{
+                h5{
+                  text-align: center;
+                  font-size: $font-size;  
+                  color: rgb(10, 231, 157);
+                  padding: .9375rem;
+                  margin-bottom: 1.25rem;
+                
+                }
+                p{
+                  text-align: justify;
+                  font-size: $font-size;  
+                  color: black;
+                  padding: .625rem;
+                }
+               }
             }
-        }
+   }     
+                
+ }
+            
+            }

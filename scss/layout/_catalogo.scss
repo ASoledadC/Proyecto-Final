@@ -1,43 +1,56 @@
 /*catalogo*/
-.seccion-catalogo{
+body{
+    overflow-x: hidden;
+
+   .seccion-catalogo{
     @include flex(column, center, center, none);
     width: 100%;
-    height: auto;
-    margin: 1.875rem;
-    overflow-x: hidden;
+    height: 100vh;
     
    
-              h2{
+              h1{
+                background-color: rgb(178, 237, 196);
         text-align: center;
        font-family: $font-family;
-       font-size: 1.875rem; 
+       font-size: $font-size; 
        margin: 1.25rem;
-       text-decoration: underline;
-
+       text-transform: uppercase;
+       padding: 2.5rem;
+              }
         .catalogo-img{
-            
         align-items: center;
         justify-content: center;
-         width: 18.75rem;
-         height: 18.75rem;
-        
-       }
-    }
+         width: 80%;
+         height: 70%;
+         text-align: center;
+        }
+           img{
+            align-items: center;
+            justify-content: center;
+         width: 40%;
+         height:100%;
+         align-items: center;
+         
+         
+         
+                 }
+    
 
         .catalogo-class{
+            
             border-radius: .3125rem;
             border-color: black;
             background-color: orange;
             justify-content: center;
             padding: .625rem .9375rem;
-   
+            margin-top: .625rem;
                 .catalogo-a{
                 text-decoration: none;
                 text-transform: capitalize;
-                font-size: 1.25rem;
-                color: black;
+                font-size: .9375rem;
+                color: $font-color;
                 font-family: Arial, Helvetica, sans-serif;
-                padding: 1.25rem;
+               
         }
 
          
@@ -47,4 +60,4 @@
 }
 
 
-
+}

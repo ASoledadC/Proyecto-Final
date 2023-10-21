@@ -1,85 +1,13 @@
 /*media querys 768 */
 @media(max-width: 768px){
-.color-header{ 
-    flex-direction: row;
-    
-          .titulo-fonts{
-                p {
-            color: white;
-            font-size: .9375rem;
-       } 
-       
-    }
-        nav{
-           .nav-bar{
-      flex-direction: row;
-      justify-content: space-around;
-            li{
-                 a{
-                  color: white; 
-                     }
-            }
-       }  
-     }
-}
-
-/*media 768*/
-.seccion-navegacion{  
-     div{
-            label{
-              display:flex;
-              color: white;
-              cursor: pointer;
-                  }
-         #toggle:checked ~ .menu{
-              height: 100%;
-             }  
-            .menu{
-              display:flex;
-              width:100%;
-              height: 0; 
-              overflow: hidden;  
-                .ul-pages{
-             flex-direction: column;
-             align-items: flex-end;
-             padding: 0.5rem 0 ;
-                    }  
-          
-     }
-    }
-  }
-         /*label{
-            display:flex;
-            color: white;
-            cursor: pointer;  
-                } 
-                             
-        .menu{
-                  display:flex;
-                  width:100%;
-                  height: 0; 
-                  overflow: hidden;
-                 .ul-pages{
-                 /*flex-direction: column;
-                 align-items: flex-end;
-                 padding: 0.5rem 0 ;
-                 display: none;
-                     }
-                     #toggle:checked ~ .ul-pages{
-                      display: block; 
-                    } 
-              }
-          }
-        }*/
-
 
     .index-seccion-principal{
       background-size: 70%;
          .container-index1{
             h1{
              font: size 15px; ; 
-             margin: 1.25rem;
-            padding-top: .9375rem;
+             margin: 1.875rem;
+             padding-top: none;
             }
             p{
              font-size: .625rem;
@@ -109,33 +37,106 @@
 
 
 /*catalogo*/
-.seccion-catalogo{
-  flex-direction: column;
+body{
+  .seccion-catalogo{
   
-        h2{
-    font-size: 1.25rem;
-  }
-    .catalogo-img{
-padding-left: 6.25rem;
-}
-}
-/*contactanos*/
-.contactanos{
-  h2{
-  font-size: 1.5625rem;
-        padding: 1.875rem;
-  }
-  p{
-    font-size: 1.25rem;
-    padding: 1.25rem; 
-  }
-  .datos-contactos{
+           h1{
     font-size: .9375rem;
-            padding:.625rem ;
-  }
+          }
+    .catalogo-img{
+      width: 90%;
+      height: auto;
+      img{
+        width: 45%;
+      height: auto;
+          }
+         }
+         .catalogo-class{
+          background-color: $background;
+          padding: .3125rem .1875rem;
+         }
+        }
+      }
+/*contactanos*/
+.seccion-contactos{
+       padding-top: 1.25rem;
+      .contactanos{
+            h2{
+        font-size: 1.25rem;
+        padding: 3.125rem;
+        padding-top: 50px;
+        margin-top: .625rem;
+              }
+             p{
+         font-size: 1.25rem;
+         padding: 1.875rem; 
+               }
+              }
+      .datos-contactos{
+             p{
+         font-size: .9375rem;
+         padding: .625rem;
+         padding-bottom: 1.25rem;
+            
+         }
+        }
 }
 
+/*seccion-negocio*/
+.seccion-negocio{
+  flex-direction: column;
+  height: auto;
 
+        div{
+             h1{
+          font-size: 1.25rem;  
+              }
+            p{
+          font-size: .9375rem;  
+             }
+      
+     .boton-negocio{
+         .contactar-naranja{
+          margin-bottom: 1.875rem;
+             .class-contactanos{
+              font-size: .9375rem 
+             }
+         } 
+     } 
+}
+}
 
-
+/*productos - destacados*/
+.container-fluid{
+  .seccion-productos{
+ 
+        h1{
+          padding: 2.5rem;
+          margin-top: none;
+         }
+       }
+       .row{
+          .col{
+            .card{
+               .card-body{
+          
+                p{
+          font-size: .9375rem;
+               }
+      }
+    }
+     }
+}
+}
+/*ingreso*/
+.seccion-ingreso{
+     .ingresa-aqui{
+      padding: 2.5rem;
+    font-size: .9375rem;
+           }
+  .ingresar-class{      
+    font-size: .9375rem;
+    padding: 1.875rem;
+  }
+}
 }

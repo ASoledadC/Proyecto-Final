@@ -1,0 +1,130 @@
+/*media 424*/
+
+@media(max-width: 424px){
+    
+   .index-seccion-principal {
+    background-size: 70%;
+    height: auto;
+        
+        .container-index1{
+              h1 {
+            text-align: center;
+            justify-content: center;
+            font-size: .625rem;
+            margin: 1.25rem;
+            padding-top: 30px;
+          }
+             p {
+    text-align: center;
+    justify-content: center;
+    font-size: .375rem;
+    word-spacing: .625rem;
+        line-height: 1.875rem;
+    margin: .625rem;
+    padding-top: .1875rem;
+                  } 
+              }
+            }
+   
+
+    
+     /*catalogo*/
+     body{
+     .seccion-catalogo{
+      height: auto;
+      h1{
+        background-color:  rgb(229, 227, 222);
+        font-size: .9375rem;
+        padding-top: 3.125rem;
+             }
+             .catalogo-img{
+              width: 80%;
+              
+              img{
+                width: 80%;
+              
+                  }
+                 }  
+                 .catalogo-class{
+                   padding: .3125rem .1875rem;
+                   margin-bottom: .625rem;
+                  .catalogo-a{
+                  font-size: .625rem;
+                  }
+                 }
+     }
+           
+    }   
+    /*contactanos*/
+    .seccion-contactos{
+    .contactanos{
+      padding-top: none;
+            h2{
+            background-color:rgb(246, 194, 138); 
+            font-size: 1.25rem;
+            
+            margin-top: none;
+              }
+             p{
+            background-color: rgb(190, 187, 187); 
+           
+            }
+          }
+          .datos-contactos{
+            p{
+        font-size: .625rem;
+        
+        padding-bottom: 1.25rem;
+             }
+            }
+          }
+
+          /*seccion-negocio*/
+          .seccion-negocio{
+                  div{
+                       h1{
+                    font-size: .9375rem;  
+                        }
+                      p{
+                    font-size: .75rem;  
+                       }
+         .boton-negocio{
+           .contactar-naranja{
+              .class-contactanos{
+                font-size: .625rem;
+            }
+          }
+         } 
+        }
+      }
+
+    /*productos - destacados*/
+.container-fluid{
+       .seccion-productos{
+        margin-top: 1.25rem;
+      background-color: rgb(229, 227, 222);
+             h1{
+          font-size: 1.25rem;
+          margin-top: none;
+              }
+            }
+   
+            .row{
+              flex-direction: column;
+              .col{
+                .card{
+            .card-body{
+              p{
+                font-size: .625rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+
+
+
+        }

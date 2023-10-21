@@ -1,17 +1,23 @@
 /*contactanos. html*/
 .seccion-contactos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
-padding-top: 2.5rem;
+    padding-top: 2.5rem;
 
-.contactanos {
+     .contactanos {
          h2{
         background-color: rgb(178, 231, 178);
         text-align: center;
         font-family: 'Libre Franklin', sans-serif;
-        font-size: 2.5rem;
+        font-size: 1.875rem;
+        text-transform: uppercase;
         padding: 3.125rem;
         width: 100%;
+        margin-top: 3.125rem;
 }
                    p{
                     width: 100%;
@@ -24,17 +30,17 @@ padding-top: 2.5rem;
         }
  }
 
- .datos-contacto{
-    
+     .datos-contacto{
     background-color: white;
+    flex-wrap: wrap;
               p{
-            font-size: 1.875rem;
+            font-size: 1.5625rem;
             padding: 2.1875rem;
             text-align: center;
             &:hover{
                 transform: scale(1.5);  
                 transition: 2s;  
                     }
- }
-}
+            }
+        }
 }

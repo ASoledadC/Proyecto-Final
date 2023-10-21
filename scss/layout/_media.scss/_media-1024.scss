@@ -1,8 +1,5 @@
 /*media 1024*/
 @media(max-width: 1024px){
-.color-header{
-    justify-content: space-around;  
-    }
 
    .index-seccion-principal{
     background-size: 60%;
@@ -15,17 +12,34 @@
       p{
        font-size: .9375rem; 
       }
-    }   
-             
+    } 
+  }  
+   
+  .seccion-contactos{
+      .contactanos{
+        h1{
+          font-size: 1.875rem;
+        }
+          p{
+            font-size: 1.25rem; 
+          } 
+      }
+     .datos-contacto{
+      font-size: 1.25rem;
+     }
 
-/*catalogo media*/
-.seccion-catalogo{
-  .catalogo-img{
-    padding-left: 15.625rem; 
+
   }
+
+.container-fluid{
+    .seccion-productos{
+      h1{
+        font-size: 1.25rem;
+      }
+    }   
+     }
 }
 
 
 
-   }
-}
+  
